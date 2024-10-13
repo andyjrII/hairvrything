@@ -12,8 +12,10 @@ function isInViewport(element) {
 
 // Scroll event listener
 window.addEventListener('scroll', function () {
-  const image = document.querySelector('.slide-in-image');
-  if (isInViewport(image)) {
-    image.classList.add('show');
-  }
+  const images = document.querySelectorAll('.slide-in-image');
+  images.forEach((image) => {
+    if (isInViewport(image)) {
+      image.classList.add('show');
+    }
+  });
 });

@@ -4,7 +4,7 @@
   --green: #164734;
   --lemon: #088b60;
   --black: #111010;
-  --grey: #212121;
+  --grey: #424242;
   --brown: #ebd8c9;
   --light-green: #f5fff9;
 }
@@ -90,7 +90,8 @@ nav {
   height: 20px;
 }
 
-.waitlist-btn {
+.waitlist-btn,
+.personalise-btn {
   margin-top: 15px;
 }
 
@@ -128,7 +129,6 @@ nav {
   align-items: center;
 }
 
-/* Keyframes for sliding text */
 @keyframes slide-in-out {
   0% {
     transform: translateX(0); /* Start at the beginning */
@@ -145,38 +145,27 @@ nav {
   border-radius: 50%;
 }
 
-.we-are {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 50px 0 -20px 100px;
-}
-
-.custom-hr {
-  width: 500px;
-  border: 1px solid var(--grey);
-  margin: 20px 0;
-}
-
 .about-box {
   background-color: var(--light-green);
   width: 100%;
+  margin-bottom: 30px;
 }
 
-.text-section {
+.about-box .text-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.text-section h2 {
+.about-box .text-section h2 {
   font-size: 22px;
   font-weight: 500;
   text-align: justify;
   width: 400px;
 }
 
-.text-section p,
+.about-box .text-section p,
 td {
   font-size: 16px;
   text-align: justify;
@@ -190,13 +179,13 @@ td {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 100%;
+  width: 130%;
 }
 
 .image-section img,
 .image-section2 img {
-  width: 130%;
-  height: 450px;
+  width: 100%;
+  height: 400px;
   opacity: 0;
   transition: all 0.8s ease-out;
 }
@@ -206,7 +195,7 @@ td {
 }
 
 .image-section2 img {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .slide-in-image.show {
@@ -221,17 +210,14 @@ td {
   width: 500px;
 }
 
-table {
+.text-section table {
   width: 500px;
   border: none;
   border-collapse: collapse;
+  text-align: justify;
 }
 
-table tr {
-  align-items: start;
-}
-
-table td {
+.text-section table td {
   border: 1px solid black;
   padding: 10px; /* Optional: padding inside the cells */
   width: 250px;
@@ -250,8 +236,104 @@ table tr:last-child td:last-child {
   margin: 50px 0 -20px 0;
 }
 
-.custom-hr2 {
+.custom-hr {
   width: 500px;
   border: 1px solid var(--grey);
   margin: 20px auto;
+}
+
+.custom-card {
+  border-style: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure cards have equal height */
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-icon {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  color: var(--green);
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #87ffd7;
+}
+
+.card-heading {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card-text {
+  text-align: left;
+  font-size: 16px;
+}
+
+.container .row {
+  margin-top: 20px;
+}
+
+.faq-box {
+  width: 75%;
+  margin: 40px auto 20px auto;
+}
+
+.accordion-button {
+  font-weight: 500;
+}
+
+.personalise-box {
+  background-color: var(--brown);
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.personalise-box .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personalise-box .text-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  width: 400px;
+}
+
+.personalise-btn {
+  margin-left: -200px;
+}
+
+footer {
+  background-color: var(--green);
+  color: #f2f2f2;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .row {
+  margin: 0 50px;
+}
+
+footer h2 {
+  font-size: 50px;
+}
+
+footer p {
+  font-size: 18px;
 }

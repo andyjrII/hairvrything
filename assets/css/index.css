@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --green: #164734;
+  --lemon: #088b60;
+  --black: #111010;
+  --grey: #212121;
+  --brown: #ebd8c9;
+  --light-green: #f5fff9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+nav {
+  height: 54px;
+  background-color: #eeeeee;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container span {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 100px;
+}
+
+.header {
+  height: 550px;
+  background-color: var(--brown);
+}
+
+.waitlist-box {
+  width: 550px;
+  height: 300px;
+  left: 100px;
+  top: 175px;
+  position: absolute;
+}
+
+.waitlist-text-box {
+  height: 230px;
+}
+
+.waitlist-text {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.black-text {
+  color: var(--black);
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.lemon-text {
+  color: var(--lemon);
+}
+
+.waitlist-smaller-text {
+  font-size: 18px;
+  text-align: justify;
+  color: var(--black);
+}
+
+.waitlist-ellipse {
+  position: absolute;
+  top: 80px;
+  left: 290px;
+  border-radius: 50%;
+}
+
+.waitlist-ellipse img {
+  width: 20px;
+  height: 20px;
+}
+
+.waitlist-btn {
+  margin-top: 15px;
+}
+
+.image-box {
+  position: absolute;
+  top: 105px;
+  left: 570px;
+}
+
+.image-box img {
+  width: 775px;
+  height: 500px;
+}
+
+.slider-container {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflowing text */
+  position: relative;
+  height: 100px; /* Adjust as per your need */
+  display: flex;
+  align-items: center;
+}
+
+.sliding-texts {
+  display: flex; /* Arrange text in a row */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: slide-in-out 10s linear infinite;
+}
+
+/* Each sliding text */
+.sliding-texts span {
+  font-size: 40px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* Keyframes for sliding text */
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(0); /* Start at the beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the entire text block left */
+  }
+}
+
+.fa-circle {
+  width: 10px;
+  height: 10px;
+  color: var(--green);
+  border-radius: 50%;
+}
+
+.we-are {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 50px 0 -20px 100px;
+}
+
+.custom-hr {
+  width: 500px;
+  border: 1px solid var(--grey);
+  margin: 20px 0;
+}
+
+.about-box {
+  background-color: var(--light-green);
+  width: 100%;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section h2 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: justify;
+  width: 400px;
+}
+
+.text-section p,
+td {
+  font-size: 16px;
+  text-align: justify;
+  width: 400px;
+  font-weight: 500;
+}
+
+.image-section,
+.image-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-section img,
+.image-section2 img {
+  width: 130%;
+  height: 450px;
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.image-section img {
+  transform: translateX(100%);
+}
+
+.image-section2 img {
+  transform: translateX(100%);
+}
+
+.slide-in-image.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-section h3 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  width: 500px;
+}
+
+table {
+  width: 500px;
+  border: none;
+  border-collapse: collapse;
+}
+
+table tr {
+  align-items: start;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 10px; /* Optional: padding inside the cells */
+  width: 250px;
+}
+
+table tr:first-child td:first-child,
+table tr:first-child td:last-child,
+table tr:last-child td:first-child,
+table tr:last-child td:last-child {
+  border: none;
+}
+
+.discover {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 50px 0 -20px 0;
+}
+
+.custom-hr2 {
+  width: 500px;
+  border: 1px solid var(--grey);
+  margin: 20px auto;
+}

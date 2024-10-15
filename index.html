@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hairvrything</title>
+    <link rel="icon" href="/images/logo-01.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
@@ -12,7 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
     />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,8 +27,11 @@
   </head>
   <body>
     <main>
-      <nav class="flex-container">
-        <span>Hairvrything Logo</span>
+      <nav>
+        <div class="flex-container">
+          <img src="./images/logo-01.png" width="75" height="75" />
+          <span>Hairvrything</span>
+        </div>
       </nav>
 
       <div class="header">
@@ -44,7 +48,10 @@
               launch!
             </p>
             <div class="waitlist-ellipse">
-              <img src="./assets/images/ellipse-6.png" />
+              <img src="./images/ellipse-6.png" />
+            </div>
+            <div class="waitlist-ellipse2">
+              <img src="./images/ellipse-6.png" />
             </div>
           </div>
           <button class="btn btn-lg btn-outline-dark waitlist-btn">
@@ -52,7 +59,13 @@
           </button>
         </div>
         <div class="image-box">
-          <img src="./assets/images/header-girl.png" alt="" />
+          <img src="./images/header-girl.png" />
+        </div>
+        <div class="waitlist-ellipse3">
+          <img src="./images/ellipse-6.png" />
+        </div>
+        <div class="waitlist-ellipse4">
+          <img src="./images/ellipse-4.png" />
         </div>
       </div>
 
@@ -83,56 +96,57 @@
 
       <hr class="custom-hr text-center" />
 
-      <div class="row about-box">
-        <!-- Image Section -->
-        <div class="col-md-6 image-section">
-          <img
-            src="./assets/images/we-are-girl.png"
-            alt="Hair Care"
-            class="slide-in-image"
-          />
+      <div class="about-container">
+        <div class="row about-box">
+          <!-- Image Section -->
+          <div class="col-md-6 image-section">
+            <img
+              src="./images/we-are-girl.png"
+              alt="Hair Care"
+              class="slide-in-image rounded-end-5"
+            />
+          </div>
+          <!-- Text Section -->
+          <div class="col-md-6 text-section">
+            <h2>Share your hair goals and we will make it happen!</h2>
+            <p>
+              We are not just about products; we give power to your hair and
+              confidence to each strand. Our unique approach combines
+              cutting-edge AI technology with personalized solutions, ensuring
+              every hair is appreciated and treated with the care it deserves
+            </p>
+          </div>
         </div>
 
-        <!-- Text Section -->
-        <div class="col-md-6 text-section">
-          <h2>Share your hair goals and we will make it happen!</h2>
-          <p>
-            We are not just about products; we give power to your hair and
-            confidence to each strand. Our unique approach combines cutting-edge
-            AI technology with personalized solutions, ensuring every hair is
-            appreciated and treated with the care it deserves
-          </p>
-        </div>
-      </div>
-
-      <div class="row about-box">
-        <!-- Text Section -->
-        <div class="col-md-6 text-section">
-          <h3>Our Pledge</h3>
-          <table>
-            <tr class="border-bottom">
-              <td>There is power in your hair and stories in each strand</td>
-              <td class="border-start">
-                Your Afro and Curls are never unprofessional, rock them with
-                grace
-              </td>
-            </tr>
-            <tr>
-              <td>Focus on your goals while we take care of your hair.</td>
-              <td class="border-start">
-                Stand out with confidence and do not be afraid to let your hair
-                down.
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- Image Section -->
-        <div class="col-md-6 image-section2">
-          <img
-            src="./assets/images/pledge-girl.png"
-            alt="Hair Care"
-            class="slide-in-image"
-          />
+        <div class="row about-box">
+          <!-- Text Section -->
+          <div class="col-md-6 text-section">
+            <h3>Our Pledge</h3>
+            <table>
+              <tr class="border-bottom">
+                <td>There is power in your hair and stories in each strand</td>
+                <td class="border-start">
+                  Your Afro and Curls are never unprofessional, rock them with
+                  grace
+                </td>
+              </tr>
+              <tr>
+                <td>Focus on your goals while we take care of your hair.</td>
+                <td class="border-start">
+                  Stand out with confidence and do not be afraid to let your
+                  hair down.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- Image Section -->
+          <div class="col-md-6 image-section2">
+            <img
+              src="./images/pledge-girl.png"
+              alt="Hair Care"
+              class="slide-in-image rounded-start-5"
+            />
+          </div>
         </div>
       </div>
 
@@ -147,7 +161,7 @@
           <!-- Card 1 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/electronics.png" class="image-icon" />
+              <img src="./images/electronics.png" class="image-icon" />
               <h5 class="card-heading">Virtual Hair Scanner</h5>
               <p class="card-text">
                 Get in-depth analyses of your scalp and hair health using
@@ -158,7 +172,7 @@
           <!-- Card 2 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/call-center.png" class="image-icon" />
+              <img src="./images/call-center.png" class="image-icon" />
               <h5 class="card-heading">Hair Tracker & AI Assist</h5>
               <p class="card-text">
                 Monitor your hair’s progress and access unlimited resources for
@@ -169,7 +183,7 @@
           <!-- Card 3 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/dashboard.png" class="image-icon" />
+              <img src="./images/dashboard.png" class="image-icon" />
               <h5 class="card-heading">Advanced Hair Analytics & Comparison</h5>
               <p class="card-text">
                 Understand your hair better with detailed insights and compare
@@ -183,7 +197,7 @@
           <!-- Card 4 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/hair.png" class="image-icon" />
+              <img src="./images/hair.png" class="image-icon" />
               <h5 class="card-heading">Virtual Showroom for Hair Try-On</h5>
               <p class="card-text">
                 Experiment with different hairstyles virtually before making a
@@ -194,7 +208,7 @@
           <!-- Card 5 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/social-media.png" class="image-icon" />
+              <img src="./images/social-media.png" class="image-icon" />
               <h5 class="card-heading">Personalized Product Recommendations</h5>
               <p class="card-text">
                 Receive curated product suggestions tailored to your unique hair
@@ -205,7 +219,7 @@
           <!-- Card 6 -->
           <div class="col-md-4 px-4">
             <div class="custom-card">
-              <img src="./assets/images/market.png" class="image-icon" />
+              <img src="./images/market.png" class="image-icon" />
               <h5 class="card-heading">Robust Marketplace</h5>
               <p class="card-text">
                 Explore a vast online marketplace with all the hair products you
@@ -240,9 +254,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+                Hairvrything offers a unique blend of advanced technology and
+                personalised care, ensuring that your hair receives the best
+                treatment possible.
               </div>
             </div>
           </div>
@@ -265,10 +279,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+                Our hair scan uses state-of-the-art imaging to analyse your
+                scalp and hair, providing insights into your hair's health and
+                needs.
               </div>
             </div>
           </div>
@@ -291,12 +304,8 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+                Absolutely. Our personalised recommendations are tailored to
+                accommodate all hair types and scalp sensitivities.
               </div>
             </div>
           </div>
@@ -319,12 +328,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+                Yes, you can access the virtual showroom on any mobile device
+                with internet connectivity, making it easy to try new hairstyles
+                on the go.
               </div>
             </div>
           </div>
@@ -347,12 +353,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+                We recommend using the hair tracker at least once a month to
+                monitor your hair's progress and adjust your care routine as
+                needed.
               </div>
             </div>
           </div>
@@ -372,7 +375,7 @@
         <!-- Image Section -->
         <div class="col-md-6 image-section2">
           <img
-            src="./assets/images/insight-girl.png"
+            src="./images/insight-girl.png"
             alt="Hair Care"
             class="slide-in-image"
           />
@@ -406,11 +409,13 @@
           <div class="col-md-3">
             <p class="text-center">Keep in touch with us:</p>
             <div class="social-icons text-center">
-              <i class="fa-brands fa-twitter social-icon"></i
-              ><i class="fa-brands fa-facebook-f social-icon"></i>
               <i class="fa-brands fa-instagram social-icon"></i>
-              <i class="fa-brands fa-whatsapp social-icon"></i>
-              <i class="fa-brands fa-tiktok social-icon"></i>
+              <i class="fa-brands fa-facebook-f social-icon"></i>
+              <i class="fa-brands fa-twitter social-icon"></i>
+              <i class="fa-brands fa-linkedin social-icon"></i>
+              <a href="https://www.tiktok.com/@hairvrything">
+                <i class="fa-brands fa-tiktok social-icon"></i
+              ></a>
             </div>
             <hr class="custom-hr2 text-center" />
             <p class="copy text-center">Copyright @ Hairvrything 2024</p>
@@ -418,7 +423,7 @@
         </div>
       </footer>
     </main>
-    <script src="./assets/js/script.js"></script>
+    <script src="./js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

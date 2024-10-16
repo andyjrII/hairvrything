@@ -201,8 +201,8 @@ a span:hover {
 }
 
 .image-box {
-  position: absolute;
-  top: 105px;
+  position: relative;
+  top: 50px;
   left: 572px;
 }
 

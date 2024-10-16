@@ -19,3 +19,23 @@ window.addEventListener('scroll', function () {
     }
   });
 });
+
+// Scroll event listener to animate cards when they come into the viewport
+window.addEventListener('scroll', function () {
+  const cards = document.querySelectorAll('.custom-card');
+  cards.forEach((card) => {
+    if (isInViewport(card)) {
+      card.classList.add('show');
+    }
+  });
+});
+
+// Trigger animation on load for any card already in the viewport
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.custom-card');
+  cards.forEach((card) => {
+    if (isInViewport(card)) {
+      card.classList.add('show');
+    }
+  });
+});

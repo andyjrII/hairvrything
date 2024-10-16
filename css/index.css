@@ -306,6 +306,15 @@ nav {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .slider-container {
+    height: 50px;
+  }
+  .sliding-texts span {
+    font-size: 20px;
+  }
+}
+
 .about-container {
   background-color: var(--light-green);
   padding: 30px 0 30px 20px;

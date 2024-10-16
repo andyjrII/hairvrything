@@ -209,7 +209,7 @@ nav {
     padding: 0 30px 0 0;
   }
   .waitlist-box {
-    width: 100%px;
+    width: 100%px !important;
     left: 10px;
     top: 175px;
     z-index: 100;
@@ -225,6 +225,16 @@ nav {
     width: 90% !important;
     font-weight: bolder;
     text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.7);
+  }
+  .waitlist-btn {
+    background-color: rgba(22, 71, 52, 0.7) !important;
+    border: none !important;
+    color: #f2f2f2 !important;
+    font-weight: bold !important;
+  }
+  .waitlist-btn:hover {
+    color: var(--green) !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
   }
   .image-box {
     top: 305px;
@@ -315,6 +325,18 @@ nav {
   }
 }
 
+.discover {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 50px 0 -20px 0;
+}
+
+.custom-hr {
+  width: 500px;
+  border: 1px solid var(--grey);
+  margin: 20px auto;
+}
+
 .about-container {
   background-color: var(--light-green);
   padding: 30px 0 30px 20px;
@@ -392,7 +414,7 @@ td {
 
 .text-section table td {
   border: 1px solid black;
-  padding: 10px; /* Optional: padding inside the cells */
+  padding: 10px;
   width: 250px;
 }
 
@@ -403,16 +425,56 @@ table tr:last-child td:last-child {
   border: none;
 }
 
-.discover {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 50px 0 -20px 0;
-}
-
-.custom-hr {
-  width: 500px;
-  border: 1px solid var(--grey);
-  margin: 20px auto;
+@media (max-width: 480px) {
+  .discover {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 -20px 0;
+  }
+  .custom-hr {
+    width: 65%;
+    margin: 20px auto;
+  }
+  .about-container {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .image-section,
+  .image-section2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .image-section img,
+  .image-section2 img {
+    border-radius: 10px !important;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .about-box .text-section {
+    margin-left: 10px !important;
+    margin-bottom: 20px;
+  }
+  .about-box .text-section h2 {
+    font-size: 20px;
+    width: 80%;
+  }
+  .about-box .text-section p,
+  td {
+    font-size: 14px;
+    width: 80%;
+  }
+  .text-section h3 {
+    font-size: 20px;
+    width: 80%;
+  }
+  .text-section table {
+    width: 80%;
+  }
+  .text-section table td {
+    padding: 5px;
+    width: 50%;
+    text-align: left;
+  }
 }
 
 @keyframes bounce {

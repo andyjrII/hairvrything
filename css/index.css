@@ -378,7 +378,8 @@ td {
 }
 
 .image-section img,
-.image-section2 img {
+.image-section2 img,
+.image-section3 img {
   width: 100%;
   height: 400px;
   opacity: 0;
@@ -389,7 +390,8 @@ td {
   transform: translateX(100%);
 }
 
-.image-section2 img {
+.image-section2 img,
+.image-section3 img {
   transform: translateX(-100%);
 }
 
@@ -398,7 +400,7 @@ td {
   transform: translateX(0);
 }
 
-.text-section h3 {
+.about-box .text-section h3 {
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -440,12 +442,14 @@ table tr:last-child td:last-child {
     margin-bottom: 30px;
   }
   .image-section,
-  .image-section2 {
+  .image-section2,
+  .image-section3 {
     width: 100%;
     margin-bottom: 20px;
   }
   .image-section img,
-  .image-section2 img {
+  .image-section2 img,
+  .image-section3 {
     border-radius: 10px !important;
     width: 100%;
     margin-left: 20px;
@@ -463,7 +467,7 @@ table tr:last-child td:last-child {
     font-size: 14px;
     width: 80%;
   }
-  .text-section h3 {
+  .about-box .text-section h3 {
     font-size: 20px;
     width: 80%;
   }
@@ -567,11 +571,20 @@ table tr:last-child td:last-child {
   width: 100%;
 }
 
+.image-section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+}
+
 .personalise-box .text-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .personalise-box .text-section h2 {
@@ -582,6 +595,23 @@ table tr:last-child td:last-child {
 
 .personalise-btn {
   margin-left: -200px;
+}
+
+@media (max-width: 480px) {
+  .personalise-box .text-section {
+    margin: 30px 20px 0 10px;
+    width: 100%;
+  }
+  .personalise-box .text-section h2 {
+    font-size: 25px;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .personalise-btn {
+    margin: 0 auto;
+  }
 }
 
 footer {
@@ -625,4 +655,24 @@ footer a:hover {
 
 footer .copy {
   font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  footer .row {
+    margin: 20px;
+  }
+  footer h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  footer .copy {
+    font-size: 14px;
+  }
 }

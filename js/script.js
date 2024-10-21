@@ -42,12 +42,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Form submission
 document.addEventListener('DOMContentLoaded', function () {
+  const submitButton = document.querySelector("button[type='submit']"); // Select the submit button
+
   document
     .getElementById('signup')
     .addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent the form from submitting the normal way
+      event.preventDefault(); // Prevent default form submission
 
-      // Get the form data
+      // Add loading spinner to button
+      submitButton.innerHTML =
+        '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+      submitButton.disabled = true; // Disable button while submitting
+
       const email = document.getElementById('email').value;
 
       // Send the form data using fetch
@@ -65,12 +71,29 @@ document.addEventListener('DOMContentLoaded', function () {
       )
         .then((response) => response.json())
         .then((data) => {
-          // Display the response message as an alert
-          alert(data.message); // or you can display it as a popup
+          Swal.fire({
+            title: 'Success!',
+            text: data.message, // 'Sign up successful' or custom message from response
+            icon: 'success',
+            confirmButtonText: 'OK',
+          });
+
+          submitButton.innerHTML = 'Submit';
+          submitButton.disabled = false;
         })
         .catch((error) => {
           console.error('Error:', error);
-          alert('There was an error with the submission');
+          // Show SweetAlert error popup
+          Swal.fire({
+            title: 'Error!',
+            text: 'There was an issue with your submission. Please try again.',
+            icon: 'error',
+            confirmButtonText: 'OK',
+          });
+
+          // Reset the button in case of error
+          submitButton.innerHTML = 'Submit';
+          submitButton.disabled = false;
         });
     });
 });

@@ -58,6 +58,11 @@ a span:hover {
   }
 }
 
+button a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .header {
   height: 550px;
   background-color: var(--brown);

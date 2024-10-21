@@ -39,3 +39,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// Form submission
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .getElementById('signup')
+    .addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting the normal way
+
+      // Get the form data
+      const email = document.getElementById('email').value;
+
+      // Send the form data using fetch
+      fetch(
+        'https://script.google.com/macros/s/AKfycbxNjC_1yVYWx8uN4zF8xrJm7-TIunpz3c_5D_wVGCCfZuciGaGyTBpOrGvZLH7-6dbY/exec',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams({
+            email: email,
+          }),
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          // Display the response message as an alert
+          alert(data.message); // or you can display it as a popup
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('There was an error with the submission');
+        });
+    });
+});
